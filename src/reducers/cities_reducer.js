@@ -1,4 +1,4 @@
-import { SET_CITY } from '../actions';
+import { SET_CITIES } from '../actions';
 
 export default function(state, action) {
   if (state === undefined) {
@@ -6,7 +6,7 @@ export default function(state, action) {
   }
 
   switch (action.type) {
-    case SET_CITY:
+    case SET_CITIES:
       return action.payload;
     default:
       return state;
