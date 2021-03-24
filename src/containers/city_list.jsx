@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 
 // Component or Container and Action
 import { setCities } from '../actions';
-import City from './city.jsx';
+import City from '../components/city.jsx';
 
-class FlatList extends Component {
+class CityList extends Component {
 
   componentWillMount() {
     this.props.setCities();
@@ -14,7 +14,7 @@ class FlatList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="cities" >
         {this.props.cities.map((city) => {
           return <City key={city.name} city={city} />
         })}
