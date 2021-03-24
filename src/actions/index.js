@@ -1,4 +1,4 @@
-import cities from '../../data/cities.js';
+import { cities } from '../../data/cities.js';
 
 // TODO: add and export your own actions
 export const SET_CITIES = 'SET_CITIES';
