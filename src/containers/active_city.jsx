@@ -3,11 +3,19 @@ import { connect } from 'react-redux';
 
 class ActiveCity extends Component {
   render() {
-    return (
-      <div className="active-city">
+    let city = <h3></h3>;
+    if (this.props.activeCity) {
+      city = (
+        <React.Fragment>
         <h3>{this.props.activeCity.name}</h3>
         <p>{this.props.activeCity.address}</p>
         <img src={this.props.activeCity.imageUrl} alt=""/>
+        </React.Fragment>
+      );
+    }
+    return (
+      <div className="active-city">
+        {city}
       </div>
     );
   }

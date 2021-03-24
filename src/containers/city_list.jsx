@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 // Component or Container and Action
 import { setCities } from '../actions';
-import City from '../components/city.jsx';
+import City from './city.jsx';
 
 class CityList extends Component {
 
