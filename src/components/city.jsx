@@ -4,7 +4,7 @@ class City extends Component {
   render() {
     // const classes = this.props.city === this.props.selectedCity ? 'active-city' : ';'
     return (
-      <div className="active-city" >
+      <div >
         {this.props.city.name}
       </div>
     );
