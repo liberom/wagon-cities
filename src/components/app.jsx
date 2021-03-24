@@ -1,6 +1,6 @@
 import React from 'react';
 import CityList from './city_list.jsx';
-import cities from '../../data/cities.js';
+import { cities } from '../../data/cities.js';
 
 // const cities = [
 //   { name: 'Paris', address: '16 Villa Gaudelet, 75011 Paris', slug: 'paris' },
@@ -11,7 +11,7 @@ import cities from '../../data/cities.js';
 const App = () => {
   return (
     <div className="app">
-      <CityList cities={cities} />
+      <CityList className="cities" cities={cities} />
     </div>
   );
 };
